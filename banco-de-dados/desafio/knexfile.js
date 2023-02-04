@@ -1,9 +1,12 @@
 // Update with your config settings.
-const { connection } = require('./.env')
 
-module.exports = {  
+module.exports = {
   client: 'mysql',
-  connection,
+  connection: {
+    database: 'desafio-cap-04',
+    user:     'root',
+    password: '12345678'
+  },
   pool: {
     min: 2,
     max: 10
